@@ -1,0 +1,13 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>First page</title>
+</head>
+<body>
+    <p><a href="./index2.html" target='_blank' onclick="window.open(this.href,this.target);return false;">insecure link</a></p>
+    <p><a href="./index2.html" onclick="window.open(this.href);return false;">insecure link 2</a></p>
+    <p><a href="./index2.html" target='_blank' rel="noopener noreferrer" onclick="window.open(this.href,this.target);return false;">insecure link 3</a></p>
+    <p><a href="./index2.html" target='_blank' rel="noopener noreferrer">secure link</a></p>
+    <p><a href="./index2.html" target='_blank' onclick="window.open(this.href,this.target, 'noopener noreferrer');return false;">secure link2</a></p>
+</body>
+</html>
